@@ -27,12 +27,13 @@ class Program
             {
                 Console.WriteLine("Welcome to the Inventory Management System!");
                 Console.WriteLine("Choose data storage type:");
-                Console.WriteLine("1. Arrays");
-                Console.WriteLine("2. Lists");
+                Console.WriteLine("We will be using the Array System type to store!");
+                Console.WriteLine("Please enter '1' to proceed using  Arrays");
+                //Console.WriteLine("2. Lists");
                 Console.Write("Enter your choice: ");
                 theirChoice = int.Parse(Console.ReadLine());
 
-                if (theirChoice == 1 ||theirChoice ==2)
+                if (theirChoice == 1 ) //||theirChoice ==2
                 {
                     break; //User did everything chill
                 }
