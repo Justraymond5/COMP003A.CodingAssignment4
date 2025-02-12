@@ -5,6 +5,25 @@
 // Purpose: Inventory management application with a minimum of 10 elements in the collection.
 class Program
 {
+    //Method for storing main into
+    static void Into()
+    {
+        Console.WriteLine("Welcome to the Inventory Management System!");
+        Console.WriteLine("We will be using the Array System type to store!");
+        Console.WriteLine("Please enter '1' to proceed using  Arrays");  
+    }
+    // Method for storing menu
+    static void Menu()
+    {
+        Console.WriteLine("\n");
+        Console.WriteLine("\nInventory Management System Menu:");
+        Console.WriteLine("1. Add a Product");
+        Console.WriteLine("2. Update Product Quantity");
+        Console.WriteLine("3. View Inventory Summary");
+        Console.WriteLine("4. Exit");
+        Console.Write("\nEnter your choice: ");  
+    }
+    
     static void Main(string[] args)
     {
         //Storage Arrays
@@ -25,10 +44,7 @@ class Program
 
             try
             {
-                Console.WriteLine("Welcome to the Inventory Management System!");
-                Console.WriteLine("Choose data storage type:");
-                Console.WriteLine("We will be using the Array System type to store!");
-                Console.WriteLine("Please enter '1' to proceed using  Arrays");
+                Into();
                 //Console.WriteLine("2. Lists");
                 Console.Write("Enter your choice: ");
                 theirChoice = int.Parse(Console.ReadLine());
@@ -55,13 +71,7 @@ class Program
          //Start of Array
             if (theirChoice == 1)
             {
-                Console.WriteLine("\n");
-                Console.WriteLine("\nInventory Management System Menu:");
-                Console.WriteLine("1. Add a Product");
-                Console.WriteLine("2. Update Product Quantity");
-                Console.WriteLine("3. View Inventory Summary");
-                Console.WriteLine("4. Exit");
-                Console.Write("\nEnter your choice: ");
+                Menu();
                 int inventoryChoice = int.Parse(Console.ReadLine());
                 if (inventoryChoice == 1)
                 {
@@ -176,6 +186,8 @@ class Program
             }   */
         }
     }
+
+    
 }    
 //Notes of Assignment
 //For the arrays I used an integer 'count' variable to track how many items have been added. Ensure the count does not exceed the array's size.
